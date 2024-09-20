@@ -23,9 +23,9 @@ function root({ side }) {
         <section>
           <ul className={`${side}_ul`}>
             {features.map(({ icon, topic, desription }) => (
-              <div className="list_container">
+              <div className="list_container" key={topic}>
                 <div className="icon_wrapper">
-                  <i class={`${icon} ri-xl`}></i>
+                  <i className={`${icon} ri-xl`}></i>
                 </div>
                 <li className={`${side}-li`}>
                   <p className="topic_header">{topic}</p>
