@@ -7,11 +7,11 @@ import Root from "./routes/root";
 
 const router = createBrowserRouter([
   {
-    path: "/feature-side-image/",
+    path: "/",
     element: <Root side="left" />,
   },
   {
-    path: "/feature-side-image/right",
+    path: "/right",
     element: <Root side="right" />,
   },
 ]);
